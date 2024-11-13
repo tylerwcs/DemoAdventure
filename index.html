@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Diagnosis Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="game-screen">
+            <div id="patient-info" class="screen active">
+                <h1>Medical Diagnosis Game</h1>
+                <button id="start-case" class="btn">Begin New Case</button>
+            </div>
+
+            <div id="case-intro" class="screen">
+                <h2>Patient Case</h2>
+                <div class="case-details">
+                    <div id="case-description"></div>
+                    <div class="patient-stats">
+                        <h3>Patient Information:</h3>
+                        <div id="patient-stats"></div>
+                    </div>
+                    <div class="medical-history">
+                        <h3>Medical History:</h3>
+                        <div id="medical-history"></div>
+                    </div>
+                </div>
+                <button id="start-diagnosis" class="btn">Start Diagnosis</button>
+            </div>
+            
+            <div id="question-screen" class="screen">
+                <div class="question-container">
+                    <div class="question-main">
+                        <h2><span id="question-number">Step 1</span></h2>
+                        <p id="question-text"></p>
+                        <div id="options-container"></div>
+                        <div id="current-feedback" class="hidden"></div>
+                    </div>
+                    <div class="feedback-history">
+                        <h3>Previous Findings</h3>
+                        <div id="feedback-list"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="result-screen" class="screen">
+                <h2>Diagnosis Complete</h2>
+                <div id="diagnosis-result"></div>
+                <button id="play-again" class="btn">Try Another Case</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
